@@ -38,8 +38,8 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task2.V21
 
                 this.chartFunction_GKU.ChartAreas[0].AxisX.Title = "Ось Х";
                 this.chartFunction_GKU.ChartAreas[0].AxisY.Title = "Ось Y";
-
-                for(int i = 0; i <= len -1; i++)
+                chartFunction_GKU.Series[0].Points.Clear();
+                for (int i = 0; i <= len -1; i++)
                 {
                     this.dataGridViewFunction_GKU.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
 

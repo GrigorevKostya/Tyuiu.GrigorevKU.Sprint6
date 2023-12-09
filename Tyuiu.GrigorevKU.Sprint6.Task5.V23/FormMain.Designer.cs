@@ -121,7 +121,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task5.V23
             this.textBoxTask_GKU.Size = new System.Drawing.Size(577, 88);
             this.textBoxTask_GKU.TabIndex = 0;
             this.textBoxTask_GKU.TabStop = false;
-            this.textBoxTask_GKU.Text = "Прочитать данные из файла InPutFileTask5V23.txt. Вывести в dataGridView\r\nположите" +
+            this.textBoxTask_GKU.Text = "Прочитать данные из файла InPutFileTask5V23.txt. Вывести в dataGridView\r\nотрицате" +
     "льные значения и построить диаграмму по этим значениям.";
             // 
             // panelOutPut_GKU
