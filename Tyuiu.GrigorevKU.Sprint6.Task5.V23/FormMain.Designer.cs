@@ -118,6 +118,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task5.V23
             this.textBoxTask_GKU.Location = new System.Drawing.Point(3, 18);
             this.textBoxTask_GKU.Multiline = true;
             this.textBoxTask_GKU.Name = "textBoxTask_GKU";
+            this.textBoxTask_GKU.ReadOnly = true;
             this.textBoxTask_GKU.Size = new System.Drawing.Size(577, 88);
             this.textBoxTask_GKU.TabIndex = 0;
             this.textBoxTask_GKU.TabStop = false;

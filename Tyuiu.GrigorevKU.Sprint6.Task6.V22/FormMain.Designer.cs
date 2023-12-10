@@ -29,7 +29,6 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task6.V22
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelButtons_GKU = new System.Windows.Forms.Panel();
             this.buttonHelp_GKU = new System.Windows.Forms.Button();
@@ -46,7 +45,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task6.V22
             this.groupBoxOutPut_GKU = new System.Windows.Forms.GroupBox();
             this.textBoxOutPut_GKU = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_GKU = new System.Windows.Forms.OpenFileDialog();
-            this.toolTipTask_GKU = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipTask_GKU = new System.Windows.Forms.ToolTip();
             this.panelButtons_GKU.SuspendLayout();
             this.panelTask_GKU.SuspendLayout();
             this.groupBoxTask_GKU.SuspendLayout();
@@ -129,6 +128,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task6.V22
             this.textBoxTask_GKU.Location = new System.Drawing.Point(3, 18);
             this.textBoxTask_GKU.Multiline = true;
             this.textBoxTask_GKU.Name = "textBoxTask_GKU";
+            this.textBoxTask_GKU.ReadOnly = true;
             this.textBoxTask_GKU.Size = new System.Drawing.Size(1031, 68);
             this.textBoxTask_GKU.TabIndex = 0;
             this.textBoxTask_GKU.Text = resources.GetString("textBoxTask_GKU.Text");

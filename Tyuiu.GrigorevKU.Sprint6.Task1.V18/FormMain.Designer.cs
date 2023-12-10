@@ -146,6 +146,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task1.V18
             this.textBoxTask_GKU.Location = new System.Drawing.Point(10, 24);
             this.textBoxTask_GKU.Multiline = true;
             this.textBoxTask_GKU.Name = "textBoxTask_GKU";
+            this.textBoxTask_GKU.ReadOnly = true;
             this.textBoxTask_GKU.Size = new System.Drawing.Size(378, 87);
             this.textBoxTask_GKU.TabIndex = 0;
             this.textBoxTask_GKU.Text = "Протабулировать функцию на заданном диапазоне. Результат вывести в  виде таблицы." +

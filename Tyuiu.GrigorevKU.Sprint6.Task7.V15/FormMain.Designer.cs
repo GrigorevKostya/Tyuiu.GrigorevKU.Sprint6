@@ -156,6 +156,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task7.V15
             this.textBoxTask_GKU.Location = new System.Drawing.Point(3, 18);
             this.textBoxTask_GKU.Multiline = true;
             this.textBoxTask_GKU.Name = "textBoxTask_GKU";
+            this.textBoxTask_GKU.ReadOnly = true;
             this.textBoxTask_GKU.Size = new System.Drawing.Size(1119, 69);
             this.textBoxTask_GKU.TabIndex = 0;
             this.textBoxTask_GKU.Text = resources.GetString("textBoxTask_GKU.Text");

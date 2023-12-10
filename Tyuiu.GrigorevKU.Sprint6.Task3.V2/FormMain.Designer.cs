@@ -30,18 +30,18 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task3.V2
         private void InitializeComponent()
         {
             this.groupBoxTask_GKU = new System.Windows.Forms.GroupBox();
-            this.groupBoxResult = new System.Windows.Forms.GroupBox();
-            this.dataGridViewOutput_GKU = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTask_GKU = new System.Windows.Forms.DataGridView();
             this.textBoxTask_GKU = new System.Windows.Forms.TextBox();
+            this.dataGridViewTask_GKU = new System.Windows.Forms.DataGridView();
+            this.groupBoxResult = new System.Windows.Forms.GroupBox();
+            this.labelResult_GKU = new System.Windows.Forms.Label();
+            this.dataGridViewOutput_GKU = new System.Windows.Forms.DataGridView();
             this.buttonDone_GKU = new System.Windows.Forms.Button();
             this.buttonInfo_GKU = new System.Windows.Forms.Button();
-            this.labelResult_GKU = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxTask_GKU.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTask_GKU)).BeginInit();
             this.groupBoxResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutput_GKU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTask_GKU)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_GKU
@@ -55,32 +55,17 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task3.V2
             this.groupBoxTask_GKU.TabStop = false;
             this.groupBoxTask_GKU.Text = "Условие";
             // 
-            // groupBoxResult
+            // textBoxTask_GKU
             // 
-            this.groupBoxResult.Controls.Add(this.labelResult_GKU);
-            this.groupBoxResult.Controls.Add(this.dataGridViewOutput_GKU);
-            this.groupBoxResult.Location = new System.Drawing.Point(464, 6);
-            this.groupBoxResult.Name = "groupBoxResult";
-            this.groupBoxResult.Size = new System.Drawing.Size(462, 267);
-            this.groupBoxResult.TabIndex = 1;
-            this.groupBoxResult.TabStop = false;
-            this.groupBoxResult.Text = "Вывод данных";
-            // 
-            // dataGridViewOutput_GKU
-            // 
-            this.dataGridViewOutput_GKU.AllowUserToAddRows = false;
-            this.dataGridViewOutput_GKU.AllowUserToDeleteRows = false;
-            this.dataGridViewOutput_GKU.AllowUserToResizeColumns = false;
-            this.dataGridViewOutput_GKU.AllowUserToResizeRows = false;
-            this.dataGridViewOutput_GKU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOutput_GKU.ColumnHeadersVisible = false;
-            this.dataGridViewOutput_GKU.Location = new System.Drawing.Point(6, 46);
-            this.dataGridViewOutput_GKU.Name = "dataGridViewOutput_GKU";
-            this.dataGridViewOutput_GKU.RowHeadersVisible = false;
-            this.dataGridViewOutput_GKU.RowHeadersWidth = 51;
-            this.dataGridViewOutput_GKU.RowTemplate.Height = 24;
-            this.dataGridViewOutput_GKU.Size = new System.Drawing.Size(239, 215);
-            this.dataGridViewOutput_GKU.TabIndex = 0;
+            this.textBoxTask_GKU.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxTask_GKU.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTask_GKU.Location = new System.Drawing.Point(6, 46);
+            this.textBoxTask_GKU.Multiline = true;
+            this.textBoxTask_GKU.Name = "textBoxTask_GKU";
+            this.textBoxTask_GKU.ReadOnly = true;
+            this.textBoxTask_GKU.Size = new System.Drawing.Size(200, 131);
+            this.textBoxTask_GKU.TabIndex = 1;
+            this.textBoxTask_GKU.Text = "Дана матрица 5 на 5. Заменить четные элементы первой строки на нули.";
             // 
             // dataGridViewTask_GKU
             // 
@@ -98,16 +83,41 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task3.V2
             this.dataGridViewTask_GKU.Size = new System.Drawing.Size(230, 214);
             this.dataGridViewTask_GKU.TabIndex = 0;
             // 
-            // textBoxTask_GKU
+            // groupBoxResult
             // 
-            this.textBoxTask_GKU.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxTask_GKU.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTask_GKU.Location = new System.Drawing.Point(6, 46);
-            this.textBoxTask_GKU.Multiline = true;
-            this.textBoxTask_GKU.Name = "textBoxTask_GKU";
-            this.textBoxTask_GKU.Size = new System.Drawing.Size(200, 131);
-            this.textBoxTask_GKU.TabIndex = 1;
-            this.textBoxTask_GKU.Text = "Дана матрица 5 на 5. Заменить четные элементы первой строки на нули.";
+            this.groupBoxResult.Controls.Add(this.labelResult_GKU);
+            this.groupBoxResult.Controls.Add(this.dataGridViewOutput_GKU);
+            this.groupBoxResult.Location = new System.Drawing.Point(464, 6);
+            this.groupBoxResult.Name = "groupBoxResult";
+            this.groupBoxResult.Size = new System.Drawing.Size(462, 267);
+            this.groupBoxResult.TabIndex = 1;
+            this.groupBoxResult.TabStop = false;
+            this.groupBoxResult.Text = "Вывод данных";
+            // 
+            // labelResult_GKU
+            // 
+            this.labelResult_GKU.AutoSize = true;
+            this.labelResult_GKU.Location = new System.Drawing.Point(10, 20);
+            this.labelResult_GKU.Name = "labelResult_GKU";
+            this.labelResult_GKU.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_GKU.TabIndex = 1;
+            this.labelResult_GKU.Text = "Результат:";
+            // 
+            // dataGridViewOutput_GKU
+            // 
+            this.dataGridViewOutput_GKU.AllowUserToAddRows = false;
+            this.dataGridViewOutput_GKU.AllowUserToDeleteRows = false;
+            this.dataGridViewOutput_GKU.AllowUserToResizeColumns = false;
+            this.dataGridViewOutput_GKU.AllowUserToResizeRows = false;
+            this.dataGridViewOutput_GKU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutput_GKU.ColumnHeadersVisible = false;
+            this.dataGridViewOutput_GKU.Location = new System.Drawing.Point(6, 46);
+            this.dataGridViewOutput_GKU.Name = "dataGridViewOutput_GKU";
+            this.dataGridViewOutput_GKU.RowHeadersVisible = false;
+            this.dataGridViewOutput_GKU.RowHeadersWidth = 51;
+            this.dataGridViewOutput_GKU.RowTemplate.Height = 24;
+            this.dataGridViewOutput_GKU.Size = new System.Drawing.Size(239, 215);
+            this.dataGridViewOutput_GKU.TabIndex = 0;
             // 
             // buttonDone_GKU
             // 
@@ -129,15 +139,6 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task3.V2
             this.buttonInfo_GKU.UseVisualStyleBackColor = true;
             this.buttonInfo_GKU.Click += new System.EventHandler(this.buttonInfo_GKU_Click);
             // 
-            // labelResult_GKU
-            // 
-            this.labelResult_GKU.AutoSize = true;
-            this.labelResult_GKU.Location = new System.Drawing.Point(10, 20);
-            this.labelResult_GKU.Name = "labelResult_GKU";
-            this.labelResult_GKU.Size = new System.Drawing.Size(80, 17);
-            this.labelResult_GKU.TabIndex = 1;
-            this.labelResult_GKU.Text = "Результат:";
-            // 
             // FormMain_GKU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,10 +156,10 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task3.V2
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxTask_GKU.ResumeLayout(false);
             this.groupBoxTask_GKU.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTask_GKU)).EndInit();
             this.groupBoxResult.ResumeLayout(false);
             this.groupBoxResult.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutput_GKU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTask_GKU)).EndInit();
             this.ResumeLayout(false);
 
         }
