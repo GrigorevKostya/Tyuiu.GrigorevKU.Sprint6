@@ -35,7 +35,7 @@ namespace Tyuiu.GrigorevKU.Sprint6.Task7.V15.Lib
             {
                 for (int c = 0; c < columns_1; c++)
                 {
-                    if ((array[r, c] < 10) && (array[r, c] % 3 == 0) && ( c == 7))
+                    if ((array[r, c] < 10) && (array[r, c] % 3 == 0) && ( c == 6))
                     {
                         array[r, c] = 3;
                     }
